@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<!-- plugin.xml file written by dynaTrace Client 6.3.0 -->
+<plugin>
+  <extension point="com.dynatrace.diagnostics.pdk.pluginconfig" id="com.dynatrace.community" name="GenericMeasureMonitorPlugin">
+    <information>
+      <category value="" />
+      <displayname value="Generic Measure Monitor Plugin" />
+      <description value="This plugin provides a REST API to feed any generic data to Dynatrace" />
+      <supportlevel value="unsupported" />
+    </information>
+    <configuration>
+      <property key="myRESTURLEndpoint" label="REST URL Endpoint" type="string" description="Defines the REST URL Endpoint of this plugin. This is in combination with the port, e.g: http://localhost:YOURPORT/REST URL Endpoint - could translate to http://localhost:4000/genericmonitor&#xA;&#xA;The endpoint MUST START with /" default="/genericmonitor" multiline="false" />
+      <property key="myRESTPort" label="REST Port" type="long" description="Port for the REST Endpoint" default="4000" />
+    </configuration>
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.monitor" id="com.dynatrace.community.monitor" name="Generic Measure Monitor Plugin">
+    <plugin configid="com.dynatrace.community" class="com.dynatrace.community.monitor.GenericMeasureMonitorPlugin" />
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.monitormetricgroup" id="com.dynatrace.community.monitor.genericmetricsgroup" name="Generic Metric Group">
+    <metricgroup monitorid="com.dynatrace.community.monitor">
+      <metric defaultrate="purepath" name="Numeric Metric" unit="number" description="Generic Numeric Metric" />
+    </metricgroup>
+  </extension>
+</plugin>
