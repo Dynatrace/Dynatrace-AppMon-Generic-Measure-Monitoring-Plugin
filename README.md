@@ -1,7 +1,25 @@
-# Dynatrace-Generic-Measure-Monitoring-Plugin
+# Generic Measure Monitoring Plugin
+
+#### Description
 Opens an HTTP Listener Port with which you can feed ANY generic measure to Dynatrace. One of the use cases will be feeding data from JMeter or other testing tools to Dynatrace
 
-Further information in the [Dynatrace Community](https://community.dynatrace.com/community/display/DL/Generic+Measure+Monitoring+Plugin)
+#### Name and Version
+Generic Measure Monitoring Plugin
+
+#### Compatible with
+Dynatrace 6.3+
+
+#### Author
+Andreas Grabner (Dynatrace)
+
+#### License
+Dynatrace Experimental Software License
+
+#### Support Level
+Not Supported
+
+#### Download (latest version)
+[com.dynatrace.community_1.0.0.jar](https://github.com/Dynatrace/Dynatrace-Generic-Measure-Monitoring-Plugin/releases/download/v1.0%2C0/com.dynatrace.community_1.0.0.jar)
 
 ## Dont yet have Dynatrace?
 Get your own Personal License through http://bit.ly/dtpersonal 
