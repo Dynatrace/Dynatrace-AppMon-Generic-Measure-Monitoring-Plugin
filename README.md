@@ -27,6 +27,7 @@ URL Format
 
 Sample URLs that will deliver data:
 http://localhost:4000/genericmonitor?Timer1:Response Time=123;Timer2:Response Time=323
+This will generate a Response Time Measure with two Split Values "Timer 1" and "Timer 2" with the values 123 and 323
 http://localhost:4000/genericmonitor?Timer1:Response Time=123,Bytes=234,Latency=332
 http://localhost:4000/genericmonitor?Response Time=123,Latency=333
 http://localhost:4000/genericmonitor?Response Time=123
@@ -41,6 +42,11 @@ So - here is a sample JMeter BeanShell Listener that is forwarding JMeter result
 And here is now how this could look like when you take this data and put it on a Dynatrace Web Dashboard with all your other Dynatrace Metrics
 
 ![](https://github.com/Dynatrace/Dynatrace-Generic-Measure-Monitoring-Plugin/blob/master/images/JMeterDTWebDashboard.png)
+
+# Installation 
+Download the plugin from GitHub and then Install it as you would install any other plugin in Dynatrace. Check out the documentation for instructions: [Plugin Management](https://community.dynatrace.com/community/display/DOCDT65/Plugin+Management)
+
+**The plugin will open an HTTP Listening Port on the Collector it runs. Default is 4000 but this can be changed**
 
 # Configuring the Plugin
 
