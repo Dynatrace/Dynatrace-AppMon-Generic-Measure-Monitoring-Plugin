@@ -14,11 +14,7 @@
 
 **Download (latest version)** [com.dynatrace.community_1.0.0.jar](https://github.com/Dynatrace/Dynatrace-Generic-Measure-Monitoring-Plugin/releases/download/v1.0%2C0/com.dynatrace.community_1.0.0.jar)
 
-## Dont yet have Dynatrace?
-Get your own Personal License through http://bit.ly/dtpersonal 
-If you want to get in touch with me (the author) also sign up for the personal license. You will get an email from me as I run the Dynatrace Free Trial/Personal License program
-
-# What does the plugin allow you to do?
+## Description
 It allows you to push measure data to Dynatrace via a REST API. Here are some sample URLs that will create measures in Dynatrace
 
 ```
